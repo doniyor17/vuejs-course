@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1</title>
+</head>
+<body>
+    <div id="app">
+        <p>Messsage is: {{message}}</p>
+        <input type="text" v-model="text">
+        <!-- directive which start with v-something -->
+        {{text}}
+        <!-- <button v-on:click="clickMe">Click</button> -->
+        <button @click="clickMe">Click</button>
+        <button @click="age++">Click</button>
+    </div>
+    <div id="app2">
+        {{text}}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
