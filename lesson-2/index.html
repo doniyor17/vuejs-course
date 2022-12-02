@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <!-- Data binding v-bind v-html events: v-on:someEvent="blahBlah", event  modifier Two-way data binding, computed properties v-show v-if v-else-if v-else-->
+    <div id="app">
+        <!-- {{message}} -->
+        <!-- <img src="https://picsum.photos/400" alt=""> -->
+        <!-- <img v-bind:src="url" alt=""> -->
+        <!-- <img :src="url" :width="w" :height="h" alt=""> -->
+        <!-- <a :href="url">An image</a>
+        <div v-html="img"></div> -->
+        <div>
+            <!-- <button @click.once="clickME">Click</button> -->
+            <!-- <button @dblclick="clickMeDouble">Click</button> -->
+            <!-- <button @mouseenter="mouseEntered">mouseEnterFN</button> -->
+            <!-- <input type="text" v-model="someText">
+            {{someText}} -->
+            <!-- <button @click="addHundred()">add hundred</button>
+            <p>{{addHundred()}}</p>
+            <button @click="addTen()">add hundred</button>
+            <p>{{addTen()}}</p>
+            <p>{{hudredDollars}}</p> -->
+        </div>
+        <!-- <div style="width: 500px; height: 500px; border: 1px solid red; ">{{message}}</div> -->
+        <!-- <form @submit.prevent="submitME">
+            <input type="text" v-model.enter="someText">
+            {{someText}}
+            <input type="text" @keyup.ctrl.enter="log">
+            <button>Submit</button>
+        </form> -->
+
+        <!-- <h2 v-show="lang =='uz'">Salom</h2>
+            <h2 v-show="lang =='en'">Hello</h2>
+            <h2 v-show="lang =='fr'">Bonjour</h2>
+            <h2 v-show="lang =='ru'">Privet</h2> -->
+
+            <h2 v-if="lang =='uz'">Salom</h2>
+            <h2 v-if="lang =='en'">Hello</h2>
+            <h2 v-if="lang =='fr'">Bonjour</h2>
+            <h2 v-if="lang =='ru'">Privet</h2>
+
+            <div v-if="lang.length === 3">{{text}}</div>
+            <div v-else-if="lang.length < 3">{{lang}}</div>
+            <div v-else>{{message}}</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
